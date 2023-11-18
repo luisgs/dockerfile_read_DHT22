@@ -22,8 +22,8 @@ Example of running this docker image for a DHT22 sensor connected at PIN 17th an
 sudo docker run --privileged -v /sys:/sys -e pin=17 -e sleep=30 -dp 0.0.0.0:8040:8000 dockerfile_dht22
 ```
 
-```yaml
 Docker compose can look like this:
+```yaml
 version: '3'
 services:
   dht22:
